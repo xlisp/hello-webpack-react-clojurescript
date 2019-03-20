@@ -1,0 +1,13 @@
+{
+  "name": "hello-webpack-react-clojurescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "chanshunli <chanshunli@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
