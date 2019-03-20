@@ -1,7 +1,12 @@
 (ns hello-webpack.core
-  (:require [react]))
+  (:require [goog.dom :as gdom]
+            [reagent.core :as r]))
 
-(.log js/console "Hello, Webpack! I'm ClojureScript :D")
+(defn simple-component []
+  [:div
+   [:p "I am a component!"]
+   [:p.someclass
+    "I have " [:strong "bold"]
+    [:span {:style {:color "red"}} " and red "] "text."]])
 
-(.log js/console react/Component)
-
+(r/render [simple-component] (gdom/getElement "app"))
